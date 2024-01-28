@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Purchases page</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <style>
+        html,
+        body {
+            background-color: beige;
+        }
+
+        nav {
+            background-color: #dba164;
+            font-style: italic;
+            display: flex;
+            justify-content: space-evenly;
+            box-shadow: 0px 0px 5px 15px #dba164;
+            margin-bottom: 25px;
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: #60452a;
+            font-weight: 600;
+            background-color: #f988189c;
+            padding: 3px 15px;
+            border-radius: 15px;
+            text-decoration: none;
+            box-shadow: 0px 0px 5px 5px #f988189c;
+            text-align: center;
+            transition: color 1s ease-in-out, background-color 1s ease-in-out, border-bottom-color 1s ease-in-out;
+        }
+
+        a:hover {
+            color: #ffdda9;
+            background-color: #60452abd;
+            box-shadow: 0px 0px 5px 5px #60452abd;
+        }
+
+        h1 {
+            font-size: 14PX;
+            font-style: italic;
+            background-color: #dba164;
+            padding: 3px 0px;
+        }
+
+        h2 {
+            background-color: #60452a;
+            color: #ffdda9;
+            padding: 5px 0px;
+        }
+
+        h3 {
+            font-size: 14px;
+            font-style: initial;
+        }
+
+        h4 {
+            font-size: 16px;
+            font-style: italic;
+            background-color: #dba164;
+        }
+    </style>
+    <style>
+        .added {
+            display: inline-block;
+            margin: 10px;
+            border: 2pt solid #60452a;
+            box-shadow: 0px 0px 5px 5px #60452abd;
+            background-Color: #ffdda9;
+            border-Radius: 10px;
+            text-Align: center;
+            padding: 3px;
+            font-size: 10pt;
+            width: 170px;
+            height: 220px;
+            vertical-align: top;
+            cursor: pointer;
+            transition: color 1s ease-in-out, background-color 1s ease-in-out, border-bottom-color 1s ease-in-out;
+        }
+
+        .added:hover {
+            border: 2pt solid #ffdda9;
+            box-shadow: 0px 0px 5px 5px #ffdda9;
+            background-Color: #60452abd;
+            color: #ffffff;
+        }
+
+        .added:hover img {
+            scale: 1.6;
+            transform: translateY(-15px);
+        }
+
+        .added:active {
+            opacity: 1;
+        }
+
+        .added:active img {
+            scale: 1;
+            transform: translateY(0px);
+        }
+
+        .added img {
+            width: 150px;
+            margin-top: 5px;
+            border-radius: 15px;
+            transition: scale 1s ease-in-out, transform 1s ease-in-out;
+        }
+
+        .added ul {
+            margin: 0%;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="images/logo.png" height="10%" width="10%">
+
+    <header>
+        <nav>
+            &nbsp;
+            <a href="Up_home page.html">Home Page</a>&nbsp;
+            <a href="Up_login page.html">Login Page</a>&nbsp;
+            <a href="Up_products page.html">Products Page</a>&nbsp;
+            <a href="Up_purchases page.html">Purchases Page</a>&nbsp;
+            <a href="Up_payment page.html">Payment Page</a>&nbsp;
+            <a href="Up_contact page.html">Contact Page</a>&nbsp;
+            <a href="Up_policy page.html">Policy Page</a>&nbsp;
+        </nav>
+    </header>
+    <h2> &nbsp;Upwork purchases: </h2>
+    <!-- 
+    <form id="form">
+        <label for="image">Item's photo:
+            <input type="file" id="image" name="image" accept="image/*"></label>
+            <br>
+        <label for="item">Item's name:
+            <input type="text" id="item" name="item" placeholder="Enter item's name"></label>
+            <br>
+        <label for="specs">Item's specifications:
+            <textarea type="text" id="specs" name="specs" placeholder="Enter item's specifications"></textarea></label>
+            <br>
+        <input type="submit" value="Submit">
+        <br>
+        <hr>
+    </form>
+  -->
+    <div id="products">
+        <section id="list">
+            <div class="added">
+                <img src="./images/Graphic_Design.jpeg" alt="Graphic Design">
+                <br>
+                <b>Graphic Design</b>
+                <ul>
+                    <li>Website design</li>
+                    <li>Social media design</li>
+                    <li>Printed materials design</li>
+                    <li>Other than that</li>
+                </ul>
+            </div>
+            <div class="added">
+                <img src="./images/Online_Tutoring.jpeg" alt="Online Tutoring">
+                <br>
+                <b>Online Tutoring</b>
+                <br>
+                lesson types list
+                <ul>
+                    <li>Individually</li>
+                    <li>Collective</li>
+                </ul>
+                list of materials
+                <ul>
+                    <li>math</li>
+                    <li>sciences</li>
+                    <li>English language</li>
+                </ul>
+            </div>
+            <div class="added">
+                <img src="./images/Photography.jpeg" alt="Photography">
+                <br>
+                <b>Photography</b>
+                <br>
+                types of photography
+                <ul>
+                    <li>wedding parties</li>
+                    <li>personal photos</li>
+                    <li>commercial photography</li>
+                    <li>product photography</li>
+                </ul>
+            </div>
+            <div class="added">
+                <img src="./images/drawing.jpeg" alt="drawing">
+                <br>
+                <b>Drawing</b>
+                <br>
+                types of drawing :
+                <ul>
+                    <li>lllustratıons</li>
+                    <li>sculpture</li>
+                    <li>digital art</li>
+                </ul>
+            </div>
+            <div class="added">
+                <img src="./images/Nutrition_fitness.jpeg" alt="Nutrition and fitness">
+                <br>
+                <b>Nutrition and fitness</b>
+                <br>
+                nutrition coach
+                <ul>
+                    <li>healthy meals </li>
+                    <li>fitness coach</li>
+                    <li>gymnastics </li>
+                </ul>
+            </div>
+            <div class="added">
+                <img src="./images/fashion_design.jpeg" alt="Fashion design">
+                <br>
+                <b>Fashion design</b>
+                <br>
+                types of drawing :
+                <ul>
+                    <li>Clothes design</li>
+                    <li>Shoe design</li>
+                    <li>Accessories design</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <hr>
+    <footer align="center">
+        copyright <small><i>&copy; </i>2024 Upwork
+    </footer>
+    <!-- 
+<script>
+    var form = document.getElementById( "form" );
+    var image = document.getElementById( "image" );
+    var item = document.getElementById( "item" );
+    var price = document.getElementById( "price" );
+    var specs = document.getElementById( "specs" );
+    var products = document.getElementById( "products" );
+    var list = document.getElementById( "list" );
+    form.addEventListener( "submit", function ( event )
+    {
+        event.preventDefault();
+        var div = document.createElement( "div" );
+        div.classList.add( "added" );
+        var img = document.createElement( "img" );
+        img.src = URL.createObjectURL( image.files[ 0 ] );
+        div.appendChild( img );
+        var b = document.createElement( "b" );
+        b.innerHTML = "<br>" + item.value + "<br>";
+        var span = document.createElement( "span" );
+        span.innerHTML = specs.value;
+        div.appendChild( b );
+        div.appendChild( span );
+        list.appendChild( div );
+        products.style.display = "block";
+        form.reset();
+    } );
+</script>
+ -->
+</body>
+
+</html>
